@@ -1,7 +1,17 @@
 # Spork
 - Spring Boot spork project
-- http://localhost:8080/api/v1/student
-- https://youtu.be/9SGDpanrc8U?t=3141
+- https://youtu.be/9SGDpanrc8U?t=4894
+# Test api
+- List http://localhost:8080/api/v1/student
+- Add http://localhost:8080/api/v1/student
+```json
+{
+    "name": "Just",
+    "email": "j.quispe@gmail.com",
+    "dob": "2001-01-05"
+}
+```
+- Delete http://localhost:8080/api/v1/student/2
 # Setup
 - Get postgres image
 - Get adminer image
