@@ -1,6 +1,5 @@
 # Spork
 - Spring Boot spork project
-- https://youtu.be/9SGDpanrc8U?t=4894
 # Test api
 - List http://localhost:8080/api/v1/student
 - Add http://localhost:8080/api/v1/student
