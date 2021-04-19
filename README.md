@@ -35,4 +35,6 @@ docker run --name adminercnt --link postgrescnt:db -d -p 8080:8080 adminer
 git clone https://github.com/ralarconb/spork.git
 cd spork
 docker build -t spork .
+docker run -d -p8081:8081 spork
 ```
+- List the content http://192.168.1.101:8081/api/v1/student
