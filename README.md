@@ -34,4 +34,5 @@ docker run --name adminercnt --link postgrescnt:db -d -p 8080:8080 adminer
 ```sh
 git clone https://github.com/ralarconb/spork.git
 cd spork
+docker build -t spork .
 ```
