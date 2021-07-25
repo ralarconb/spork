@@ -1,18 +1,6 @@
 # Spork
-- Spring Boot spork project
+- Spring Boot CRUD project
 # Setup
-- Get postgres image
-- Get adminer image
-- Run postgres container
-- Run adminer container
-```sh
-docker pull postgres
-docker pull adminer
-docker run --name postgrescnt -e POSTGRES_PASSWORD=s3cret -d -p 5432:5432 postgres
-docker run --name adminercnt --link postgrescnt:db -d -p 8080:8080 adminer
-```
-- Go to the URL http://192.168.1.101:8080 and sign in with the user postgres and password s3cret
-- Create the database student
 - Clone the repository
 - Go into the project directory
 - Build the local image
