@@ -1,6 +1,5 @@
 # Spork
 - Spring Boot CRUD project
-# Setup
 - Clone the repository
 - Go into the project directory
 - Build the local image
