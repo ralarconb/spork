@@ -21,7 +21,3 @@ docker run -d -p8081:8081 spork
 ```
 - Send a delete request http://localhost:8080/api/v1/student/2
 - Send a put request http://localhost:8080/api/v1/student/1?name=Milagros
-- Run the application on port 8081
-```json
-java -jar spork-0.0.1-SNAPSHOT.jar --server.port=8081
-```
