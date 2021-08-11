@@ -11,8 +11,21 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
 @Entity
 @Table
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@EqualsAndHashCode
+@ToString
 public class Student {
 
 	@Id
@@ -22,64 +35,18 @@ public class Student {
 	private String name;
 	private String email;
 	private LocalDate dob;
+	private String document;
 	@Transient
 	private Integer age;
-
-	public Student() {
-
-	}
-
-	public Student(Long id, String name, String email, LocalDate dob) {
-		this.id = id;
-		this.name = name;
-		this.email = email;
-		this.dob = dob;
-	}
-
-	public Student(String name, String email, LocalDate dob) {
-		this.name = name;
-		this.email = email;
-		this.dob = dob;
-	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public LocalDate getDob() {
-		return dob;
-	}
-
-	public void setDob(LocalDate dob) {
-		this.dob = dob;
-	}
 
 	public Integer getAge() {
 		return Period.between(dob, LocalDate.now()).getYears();
 	}
 
-	public void setAge(Integer age) {
-		this.age = age;
+	public Student(String pName, String pEmail, LocalDate pDob, String pDocument) {
+		name = pName;
+		email = pEmail;
+		dob = pDob;
+		document = pDocument;
 	}
-
 }
