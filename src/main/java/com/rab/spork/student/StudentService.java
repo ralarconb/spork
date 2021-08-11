@@ -56,10 +56,9 @@ public class StudentService {
 	}
 
 	public Student getStudentByDocument(String document) {
-		// FIXME look up student by document
-		Long studentId = 1L;
-		Student student = studentRepository.findById(studentId)
-				.orElseThrow(() -> new IllegalStateException("Student with ID " + studentId + " doesn't exists!"));
+		String message = String.format("Student with document %s doesn't exists!", document);
+		Student student = studentRepository.findByDocument(document)
+				.orElseThrow(() -> new IllegalStateException(message));
 		return student;
 	}
 
