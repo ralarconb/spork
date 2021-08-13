@@ -1,20 +1,23 @@
 {
 	"info": {
-		"_postman_id": "f646bd95-4b20-4e43-b2df-23e08dcc75b5",
-		"name": "spork",
+		"_postman_id": "741db042-894a-4cbe-ae7d-881823714d6b",
+		"name": "sporkRemote",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "http://localhost:8083/api/v1/student/15991156",
+			"name": "http://192.168.1.101:8083/api/v1/student/15991156",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8083/api/v1/student/15991156",
+					"raw": "http://192.168.1.101:8083/api/v1/student/15991156",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"168",
+						"1",
+						"101"
 					],
 					"port": "8083",
 					"path": [
@@ -28,15 +31,18 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8083/api/v1/student",
+			"name": "http://192.168.1.101:8083/api/v1/student",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8083/api/v1/student",
+					"raw": "http://192.168.1.101:8083/api/v1/student",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"168",
+						"1",
+						"101"
 					],
 					"port": "8083",
 					"path": [
@@ -49,7 +55,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8083/api/v1/student",
+			"name": "http://192.168.1.101:8083/api/v1/student",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -63,10 +69,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8083/api/v1/student",
+					"raw": "http://192.168.1.101:8083/api/v1/student",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"168",
+						"1",
+						"101"
 					],
 					"port": "8083",
 					"path": [
@@ -79,15 +88,18 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8083/api/v1/student/2",
+			"name": "http://192.168.1.101:8083/api/v1/student/2",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8083/api/v1/student/2",
+					"raw": "http://192.168.1.101:8083/api/v1/student/2",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"168",
+						"1",
+						"101"
 					],
 					"port": "8083",
 					"path": [
@@ -101,15 +113,18 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8083/api/v1/student/1?name=Milagros",
+			"name": "http://192.168.1.101:8083/api/v1/student/1?name=Milagros",
 			"request": {
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8083/api/v1/student/1?name=Milagros",
+					"raw": "http://192.168.1.101:8083/api/v1/student/1?name=Milagros",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"168",
+						"1",
+						"101"
 					],
 					"port": "8083",
 					"path": [
